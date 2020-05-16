@@ -27,8 +27,8 @@ function Char(){
 }
 
 function question(){
-	showtime = Number( prompt( "请输入每产生一个字母所需的时间(秒)" ) ) * 1000;
-	downtime = Number( prompt( "请输入每个字母下降单位高度所需的时间(秒)" ) )  * 1000;
+	showtime = Number( prompt( "请输入每产生一个字母所需的时间(秒)(建议0.5秒)" ) ) * 1000;
+	downtime = Number( prompt( "请输入每个字母下降单位高度所需的时间(秒)(建议0.1秒)" ) )  * 1000;
 	if( !showtime || !downtime ){
 		alert("输入错误, 请重新输入!");
 		question();
