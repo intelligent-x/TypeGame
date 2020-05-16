@@ -40,6 +40,11 @@ function GameOver(){
 	clearInterval( createTimer );
 	clearInterval( downTimer );
 	for( let item of background.childNodes ) item.remove();
+
+	document.querySelector("#all").innerText = 0;
+	document.querySelector("#count").innerText = 0;
+	document.querySelector("#right").innerText = "0%";
+
 	document.body.append( button = document.createElement("button") );
 	button.innerText = "Start Game";
 	button.style.cssText = "width: 500px; height: 300px; background-color: #FFF; position: absolute; left: 50%; top: 50%; transform: translate( -50%, -50% ); color: #69C; font: italic normal bold 50px Consolas; text-align: center; line-height: 300px; z-index: 100; border: 0; border-radius: 10px; transition: all .1s linear 0s; cursor: pointer;";
