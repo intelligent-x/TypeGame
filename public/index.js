@@ -8,7 +8,7 @@ var background = document.querySelector("#background"),
 background.style.width = `${window.innerWidth}px`;
 background.style.height = `${window.innerHeight}px`;
 
-question();
+// question();
 
 function Char(){
 	this.x = Math.floor( Math.random() * background.clientWidth - background.clientWidth / 20 );
@@ -84,6 +84,9 @@ function downChar(){
 		}
 	}
 }
+
+showtime = 500;
+downtime = 100;
 
 createTimer = setInterval( createChar, showtime );
 

@@ -15,7 +15,7 @@ span.char {
 	position: absolute;
 	overflow: hidden;
 	color: #FFF;
-	font: bold 30px Consolas;
+	font: bold 40px Consolas;
 	transition: all .3s linear 0s;
 }
 
